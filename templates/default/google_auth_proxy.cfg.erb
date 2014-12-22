@@ -25,15 +25,11 @@ google_apps_domains = [
 
 
 # The Google OAuth Client ID, Secret
-client_id = <%= @google_client_id %>
-client_secret = <%= @google_client_secret %>
+client_id = "<%= @google_client_id %>"
+client_secret = "<%= @google_client_secret %>"
 
 # Authenticated Email Addresses File (one email per line)
-<% if ! @authenticated_emails_file.nil? %>
-authenticated_emails_file = <%= @authenticated_emails_file %>
-<% else %>
-authenticated_emails_file = ""
-<%end%>
+authenticated_emails_file = "<%= @authenticated_emails_file %>"
 
 ## Htpasswd File (optional)
 ## Additionally authenticate against a htpasswd file. Entries must be created with "htpasswd -s" for SHA encryption
