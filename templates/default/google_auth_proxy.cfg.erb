@@ -9,7 +9,7 @@ redirect_url = "https://<%= @app_name %>/oauth2/callback"
 # the http url(s) of the upstream endpoint. If multiple, routing is based on path
 upstreams = [
 <% @upstreams.each do |upstream_addr, upstream_port| %>
-	"http://<%= upstream_addr %>:<%= upstream_port %>",
+	"<%= upstream_addr %>:<%= upstream_port %>",
 <% end %>
 ]
 
