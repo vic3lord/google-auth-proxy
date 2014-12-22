@@ -9,7 +9,7 @@ default['gap']['app_name'] = node['fqdn']
 
 # upstreams
 default['gap']['upstreams'] = [
-  "localhost" => "8080"
+  "http://localhost:8080"
 ]
 
 default['gap']['google_apps_domains'] = [
