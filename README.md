@@ -1,10 +1,10 @@
 # google-auth-proxy-cookbook
 
-TODO: Enter the cookbook description here.
+Chef cookbook to install [google\_auth\_proxy](https://github.com/bitly/google_auth_proxy) by bitly
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+All Linux distros as it is written in go
 
 ## Attributes
 
