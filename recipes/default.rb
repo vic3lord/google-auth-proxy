@@ -22,3 +22,5 @@ template '/etc/google_auth_proxy.cfg' do
     authenticated_emails_file: node['gap']['authenticated_emails_file']
   })
 end
+
+include_recipe 'google-auth-proxy::service'
