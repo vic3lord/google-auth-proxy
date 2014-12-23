@@ -16,6 +16,7 @@ template '/etc/google_auth_proxy.cfg' do
     listen_port: node['gap']['listen_port'],
     app_name: node['gap']['app_name'],
     upstreams: node['gap']['upstreams'],
+    pass_basic_auth: node['gap']['pass_basic_auth'],
     google_apps_domains: node['gap']['google_apps_domains'],
     google_client_id: node['gap']['google_client_id'],
     google_client_secret: node['gap']['google_client_secret'],

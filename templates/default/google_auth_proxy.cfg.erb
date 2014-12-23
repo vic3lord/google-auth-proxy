@@ -14,7 +14,7 @@ upstreams = [
 ]
 
 # pass HTTP Basic Auth, X-Forwarded-User and X-Forwarded-Email information to upstream
-# pass_basic_auth = true
+pass_basic_auth = <%= @pass_basic_auth %>
 
 # Google Apps Domains to allow authentication for
 google_apps_domains = [

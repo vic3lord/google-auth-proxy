@@ -20,3 +20,5 @@ default['gap']['google_client_id'] = 'googleclientid'
 default['gap']['google_client_secret'] = 'goooooooglesecret'
 
 default['gap']['authenticated_emails_file'] = ""
+
+default['gap']['pass_basic_auth'] = false
