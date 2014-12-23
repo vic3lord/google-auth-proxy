@@ -18,7 +18,11 @@ template_vars = {
   google_apps_domains: node['gap']['google_apps_domains'],
   google_client_id: node['gap']['google_client_id'],
   google_client_secret: node['gap']['google_client_secret'],
-  authenticated_emails_file: node['gap']['authenticated_emails_file']
+  authenticated_emails_file: node['gap']['authenticated_emails_file'],
+  cookie_secret: node['gap']['cookie_secret'],
+  cookie_domain: node['gap']['cookie_domain'],
+  cookie_expire: node['gap']['cookie_expire'],
+  cookie_secure: node['gap']['cookie_secure']
 }
 
 template '/etc/google_auth_proxy.cfg' do

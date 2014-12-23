@@ -18,7 +18,9 @@ default['gap']['google_apps_domains'] = [
 
 default['gap']['google_client_id'] = 'googleclientid'
 default['gap']['google_client_secret'] = 'goooooooglesecret'
-
-default['gap']['authenticated_emails_file'] = ""
-
+default['gap']['authenticated_emails_file'] = ''
 default['gap']['pass_basic_auth'] = false
+default['gap']['cookie_secret'] = 'cookiejareater'
+default['gap']['cookie_domain'] = 'yourdomain.com'
+default['gap']['cookie_expire'] = '168h' # 1 Week
+default['gap']['cookie_secure'] = true

@@ -41,7 +41,7 @@ authenticated_emails_file = "<%= @authenticated_emails_file %>"
 ## Secret - the seed string for secure cookies
 ## Domain - optional cookie domain to force cookies to (ie: .yourcompany.com)
 ## Expire - expire timeframe for cookie
-# cookie_secret = ""
-# cookie_domain = ""
-# cookie_expire = "168h"
-# cookie_https_only = true
+cookie_secret = <%= @cookie_secret %>
+cookie_domain = <%= @cookie_domain %>
+cookie_expire = <%= @cookie_expire %>
+cookie_https_only = <%= @cookie_secure %>
