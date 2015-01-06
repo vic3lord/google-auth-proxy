@@ -62,6 +62,7 @@ action :install do
 
   template "/etc/init.d/google-auth-proxy-#{instance}" do
     source 'init_script.erb'
+    cookbook 'google-auth-proxy'
     owner 'root'
     group 'root'
     mode '0755'
