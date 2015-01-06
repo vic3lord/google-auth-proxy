@@ -1,0 +1,27 @@
+http_address = "<%= @listen_address %>"
+redirect_url = "<%= @redirect_url %>/oauth2/callback"
+
+upstreams = [
+<% @upstreams.each do |u| %>
+  "<%= u %>"
+<% end %>
+]
+
+google_apps_domains = [
+<% @google_apps_domains.each do |d| %>
+   "<%= d %>"
+<% end %>
+]
+
+client_id = "<%= @client_id %>"
+client_secret = "<%= @client_secret %>"
+cookie_secret = "<%= @cookie_secret %>"
+cookie_domain = "<%= @cookie_domain %>"
+cookie_expire = "<%= @cookie_expire %>"
+cookie_https_only = <%= @cookie_https_only %>
+
+# File contains list of emails that can authenticate
+authenticated_emails_file = "<%= @auth_emails_file %>"
+
+# Pass simple auth headers to the proxy
+pass_basic_auth = <%= @pass_basic_auth %>

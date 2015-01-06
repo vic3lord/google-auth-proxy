@@ -11,7 +11,7 @@
 
 dir="/tmp"
 user="root"
-cmd="google_auth_proxy --config=/etc/google_auth_proxy.cfg"
+cmd="google_auth_proxy --config=/etc/google_auth_proxy/<%= @config %>"
 
 name=`basename $0`
 pid_file="/var/run/$name.pid"
