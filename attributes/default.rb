@@ -1,5 +1,5 @@
 default['gap']['version'] = '1.0'
-default['gap']['url'] = 'https://github.com/bitly/google_auth_proxy/releases/download/v1.0/google_auth_proxy-1.0.linux-amd64.go1.3.tar.gz'
+default['gap']['url'] = 'https://github.com/bitly/google_auth_proxy/releases/download/v1.1.1/google_auth_proxy-1.1.1.linux-amd64.go1.4.2.tar.gz'
 
 default['gap']['listen_addr'] = '127.0.0.1'
 default['gap']['listen_port'] = '4180'
